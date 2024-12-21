@@ -2,11 +2,11 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="text-black mt-16">
+        <footer className="text-black">
             <div className="max-w-6xl mx-auto py-12 px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     <div>
-                        <h3 className="text-xl font-semibold mb-4">UBICO HOMES</h3>
+                        <h3 className="text-xl font-semibold mb-4">Vernon Ubico</h3>
                         <p>
                             814 Ponce DeLeon Boulevard, Suite #503<br />
                             Coral Gables, FL, 33134

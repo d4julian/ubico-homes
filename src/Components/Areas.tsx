@@ -10,7 +10,8 @@ function AreaCard({ name }: AreaProps) {
                 backgroundImage: `url('./${name}.jpg')`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat"
+                backgroundRepeat: "no-repeat",
+                WebkitBackgroundSize: "cover",
             }}
         >
             <h3 className="montserrat text-lg text-white font-medium px-2 text-center">
