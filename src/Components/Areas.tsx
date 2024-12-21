@@ -7,7 +7,7 @@ function AreaCard({ name }: AreaProps) {
         <div
             className="bg-black/60 bg-blend-overlay h-24 flex items-center justify-center shadow-md hover:bg-black/40 transition-colors"
             style={{
-                backgroundImage: `url('/${name}.jpg')`,
+                backgroundImage: `url('./${name}.jpg')`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat"

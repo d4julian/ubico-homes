@@ -30,20 +30,18 @@ export default function Listings() {
     useEffect(() => {
         const fetchProperties = async () => {
             try {
-                const response = await fetch('/api/hometheme/mls-property', {
+                // Use the CORS Anywhere proxy
+                const proxyUrl = 'https://ubico-homes.julianubico.workers.dev/api/hometheme/mls-property';
+
+                const response = await fetch(proxyUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Cache-Control': 'no-cache',
-                        'X-Content-Type-Options': 'nosniff',
-                        'X-Frame-Options': 'SAMEORIGIN',
-                        'X-XSS-Protection': '1; mode=block',
                     },
                     body: JSON.stringify({ member_id: "879" }),
                 });
                 const data = await response.json();
                 if (data.success === 1) {
-                    // Duplicate the properties array
                     setProperties([...data.featured_porpety]);
                 }
             } catch (error) {
