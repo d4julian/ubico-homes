@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { EmblaOptionsType } from 'embla-carousel';
 import EmblaCarousel from './EmblaCarousel';
 import '../styles/embla.css';

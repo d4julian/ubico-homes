@@ -1,6 +1,6 @@
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     PrevButton,
     NextButton,
